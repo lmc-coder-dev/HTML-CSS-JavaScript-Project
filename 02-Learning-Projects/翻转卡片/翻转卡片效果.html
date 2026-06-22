@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>翻转卡片效果</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .box {
+      width: 100vw;
+      height: 100vh;
+      background-color: #201b2d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      height: 80%;
+      /* background-color: aquamarine; */
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      place-items: center;
+      /* 透视距离，让所有卡片的 3D 效果可见 */
+      perspective: 800px;
+
+    }
+
+    .card {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      /* background-color: #fff; */
+      border-radius: 10px;
+      transition: all 1s;
+       /* 转到后面要隐藏盒子 */
+      backface-visibility: hidden;
+      /* 保持子元素的 3D 空间 */
+      transform-style: preserve-3d;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card:hover{
+      transform: rotateY(-180deg);
+    }
+    .card .card-content,
+    .card .card-back,
+    .card .card-back .card-back-content {
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform-style: preserve-3d;
+    }
+
+    .card .card-content h1 {
+      transform: translateZ(15px);
+       /* 转到后面要隐藏盒子 */
+      backface-visibility: hidden;
+    }
+    .card .card-content h4 {
+      transform: translateZ(15px); 
+      backface-visibility: hidden;
+    }
+    .card .card-back {
+       /* background-color: skyblue; */
+       border-radius: 10px;
+       transform: rotateY(180deg);
+        /* 转到后面要隐藏盒子 */
+      backface-visibility: hidden;
+    }
+
+    .card .card-back h5 {
+      transform: translateZ(15px); 
+      backface-visibility: hidden;
+    }
+
+    .card .card-back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+     
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="container">
+      <div class="card">
+      <img src="./assets/111.png" alt="">
+      <div class="card-content">
+        <h1>Java</h1>
+        <h4>静态强类型编程语言</h4>
+        <h4>广泛用于Web开发</h4>
+      </div>
+      <div class="card-back">
+        <img src="./assets/111.png" alt="">
+        <div class="card-back-content">
+         <h5>Java 是跨平台面向对象编程语言</h5>
+         <h5>依托 JVM 实现一次编写到处运行</h5>
+         <h5>它摒弃复杂指针，内存自动回收</h5>
+         <h5>降低内存泄漏开发风险</h5>
+         <h5>语法借鉴 C++，上手门槛适中</h5>
+         <h5>封装、继承、多态特性完善</h5>
+        </div>
+      </div>
+      </div>
+      <div class="card">
+        <img src="./assets/222.jpg" alt="" >
+        <div class="card-content">
+          <h1>Linux</h1>
+          <h4>开源的类Unix操作系统</h4>
+          <h4>广泛用于服务器</h4>
+        </div>
+        <div class="card-back">
+          <img src="./assets/222.jpg" alt="">
+          <div class="card-back-content">
+           <h5>Linux 是开源的类Unix操作系统</h5>
+           <h5>广泛用于服务器</h5>
+           <h5>它基于 Unix 内核，提供强大的命令行工具</h5>
+           <h5>Linux 发行版众多，各有特色</h5>
+           <h5>Linux 是开发人员和系统管理员的首选操作系统</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/333.jpeg" alt="" >
+        <div class="card-content">
+          <h1>JavaScript</h1>
+          <h4>动态弱类型编程语言</h4>
+          <h4>广泛用于Web开发</h4>
+        </div>
+        <div class="card-back">
+          <img src="./assets/333.jpeg" alt="">
+          <div class="card-back-content">
+           <h5>JavaScript 是动态弱类型编程语言</h5>
+           <h5>广泛用于 Web 开发</h5>
+           <h5>它基于 ECMAScript 标准</h5>
+           <h5>JavaScript 可以实现动态效果</h5>
+           <h5>它广泛用于前端开发</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/444.jpg" alt="" >
+        <div class="card-content">
+          <h1>C++</h1>
+          <h4>性能强大的静态强类型编程语言</h4>
+          <h4>广泛用于系统开发</h4>
+        </div>
+        <div class="card-back">
+          <img src="./assets/444.jpg" alt="">
+          <div class="card-back-content">
+           <h5>C++ 是性能强大的静态强类型编程语言</h5>
+           <h5>广泛用于系统开发</h5>
+           <h5>它基于 C 语言，提供强大的功能</h5>
+           <h5>C++ 可以实现系统级编程</h5>
+           <h5>它广泛用于游戏开发、嵌入式系统等领域</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/555.jpg" alt="" >
+        <div class="card-content">
+          <h1>Github</h1>
+          <h4>开源的代码托管平台</h4>
+          <h4>广泛用于版本控制</h4>
+        </div>
+        <div class="card-back">
+          <img src="./assets/555.jpg" alt="">
+          <div class="card-back-content">
+           <h5>Github 是开源的代码托管平台</h5>
+           <h5>广泛用于版本控制</h5>
+           <h5>它基于 Git 版本控制系统</h5>
+           <h5>Github 提供代码托管、协作和项目管理功能</h5>
+           <h5>它广泛用于开源项目和私有项目</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/666.png" alt="" >
+        <div class="card-content">
+          <h1>CSS</h1>
+          <h4>层叠样式表</h4>
+          <h4>广泛用于Web开发</h4>
+        </div>
+        <div class="card-back">
+          <img src="./assets/666.png" alt="">
+          <div class="card-back-content">
+           <h5>CSS 是层叠样式表</h5>
+           <h5>广泛用于 Web 开发</h5>
+           <h5>它基于 CSS 标准</h5>
+           <h5>CSS 可以实现页面样式</h5>
+           <h5>它广泛用于前端开发</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/777.jpg" alt="" >
+        <div class="card-content">
+          <h1>HTML</h1>
+          <h4>超文本标记语言</h4>
+          <h4>广泛用于Web开发</h4>
+        </div>
+        <div class="card-back">
+          <img src="./assets/777.jpg" alt="">
+          <div class="card-back-content">
+           <h5>HTML 是超文本标记语言</h5>
+           <h5>广泛用于 Web 开发</h5>
+           <h5>它基于 HTML 标准</h5>
+           <h5>HTML 可以实现页面结构</h5>
+           <h5>它广泛用于前端开发</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/python.jpg" alt="" >
+        <div class="card-content">
+          <h1>Python</h1>
+          <h4>动态弱类型编程语言</h4>
+          <h4>广泛用于数据科学和人工智能</h4>
+        </div>
+        <div class="card-back">
+          <img src="./assets/python.jpg" alt="">
+          <div class="card-back-content">
+           <h5>Python 是动态弱类型编程语言</h5>
+           <h5>广泛用于数据科学和人工智能</h5>
+           <h5>它基于 Python 标准</h5>
+           <h5>Python 可以实现动态效果</h5>
+           <h5>它广泛用于前端开发</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

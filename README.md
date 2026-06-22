@@ -9,3 +9,7 @@
 ---
 
 所有代码均为手动实现，过程中会根据自己的理解做细节调整与优化。我希望通过这些练习不断夯实前端基础，在实践中持续进步。
+
+[好玩的猫咪](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E5%A5%BD%E7%8E%A9%E7%9A%84%E7%8C%AB%E5%92%AA%E6%95%88%E6%9E%9C/%E5%A5%BD%E7%8E%A9%E7%9A%84%E7%8C%AB%E5%92%AA%E6%95%88%E6%9E%9C.html)
+
+
