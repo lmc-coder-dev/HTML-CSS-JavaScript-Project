@@ -12,9 +12,9 @@
 
 # 📚 临摹作品
 
-## [好玩的猫咪](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E5%A5%BD%E7%8E%A9%E7%9A%84%E7%8C%AB%E5%92%AA%E6%95%88%E6%9E%9C/%E5%A5%BD%E7%8E%A9%E7%9A%84%E7%8C%AB%E5%92%AA%E6%95%88%E6%9E%9C.html)
+### [好玩的猫咪](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E5%A5%BD%E7%8E%A9%E7%9A%84%E7%8C%AB%E5%92%AA%E6%95%88%E6%9E%9C/%E5%A5%BD%E7%8E%A9%E7%9A%84%E7%8C%AB%E5%92%AA%E6%95%88%E6%9E%9C.html)
 
-## [翻转卡片效果](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E7%BF%BB%E8%BD%AC%E5%8D%A1%E7%89%87/%E7%BF%BB%E8%BD%AC%E5%8D%A1%E7%89%87%E6%95%88%E6%9E%9C.html)
+### [翻转卡片效果](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E7%BF%BB%E8%BD%AC%E5%8D%A1%E7%89%87/%E7%BF%BB%E8%BD%AC%E5%8D%A1%E7%89%87%E6%95%88%E6%9E%9C.html)
 
 # ✨ 原创练习
 
