@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      background-color: #201b2d;
     }
 
     ol,ul {
@@ -21,6 +22,7 @@
       width: 1000px;
       margin: 100px auto;
       overflow: hidden;
+      
     }
 
     .box::after,.box::before {
@@ -29,12 +31,14 @@
       content: '';
       width: 100%;
       height: 100px;
-      background-color: #fff;
+      background-color: #201b2d;
       border-radius: 50%;
+
     }
 
     .box::before {
       top: -50px;
+      color: #fff;
       content: '可爱的小猫咪，滚动鼠标滚轮可以查看哦~';
       text-align: center;
       line-height: 120px;
