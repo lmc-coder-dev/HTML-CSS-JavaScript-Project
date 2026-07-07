@@ -17,4 +17,6 @@
 
 ### [翻转卡片效果](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E7%BF%BB%E8%BD%AC%E5%8D%A1%E7%89%87/%E7%BF%BB%E8%BD%AC%E5%8D%A1%E7%89%87%E6%95%88%E6%9E%9C.html)
 
+### [流光渐变边框按钮](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E6%B5%81%E5%85%89%E6%B8%90%E5%8F%98%E8%BE%B9%E6%A1%86%E6%8C%89%E9%92%AE/%E6%B5%81%E5%85%89%E6%B8%90%E5%8F%98%E8%BE%B9%E6%A1%86%E6%8C%89%E9%92%AE.html)
+
 # ✨ 原创练习
