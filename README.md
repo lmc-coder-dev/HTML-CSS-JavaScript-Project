@@ -19,4 +19,6 @@
 
 ### [流光渐变边框按钮](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E6%B5%81%E5%85%89%E6%B8%90%E5%8F%98%E8%BE%B9%E6%A1%86%E6%8C%89%E9%92%AE/%E6%B5%81%E5%85%89%E6%B8%90%E5%8F%98%E8%BE%B9%E6%A1%86%E6%8C%89%E9%92%AE.html)
 
+### [漂亮的卡片动画效果](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E6%BC%82%E4%BA%AE%E7%9A%84%E5%8D%A1%E7%89%87%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C/%E6%BC%82%E4%BA%AE%E7%9A%84%E5%8D%A1%E7%89%87%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C.html)
+
 # ✨ 原创练习
