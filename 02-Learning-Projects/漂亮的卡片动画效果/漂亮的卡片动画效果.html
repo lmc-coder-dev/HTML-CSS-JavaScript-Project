@@ -25,7 +25,7 @@
           )
           no-repeat;
       }
-      .box{
+      .box {
         position: relative;
         height: 500px;
         width: 674px;
@@ -33,65 +33,98 @@
       }
 
       .card1 {
-      background: radial-gradient(218.51% 281.09% at 100% 100%, rgba(253, 63, 51, 0.6) 0%, rgba(76, 0, 200, 0.6) 45.83%, rgba(76, 0, 200, 0.6) 100%);
-      width: 183px;
-      height: 120px;
-      position: absolute;
-      top: 150px;
-      left: -37px;
-      border-radius: 10px;
-    }
+        background: radial-gradient(
+          218.51% 281.09% at 100% 100%,
+          rgba(253, 63, 51, 0.6) 0%,
+          rgba(76, 0, 200, 0.6) 45.83%,
+          rgba(76, 0, 200, 0.6) 100%
+        );
+        width: 183px;
+        height: 120px;
+        position: absolute;
+        top: 150px;
+        left: -37px;
+        border-radius: 10px;
+      }
 
-    .card2 {
-      background: linear-gradient(192.64deg, rgb(67, 22, 219) 12.72%, rgb(144, 118, 231) 54.49%, rgb(162, 238, 255) 100.01%);
-      width: 183px;
-      height: 120px;
-      position: absolute;
-      top: 150px;
-      left: 176px;
-      border-radius: 10px;
-    }
+      .card2 {
+        background: linear-gradient(
+          192.64deg,
+          rgb(67, 22, 219) 12.72%,
+          rgb(144, 118, 231) 54.49%,
+          rgb(162, 238, 255) 100.01%
+        );
+        width: 183px;
+        height: 120px;
+        position: absolute;
+        top: 150px;
+        left: 176px;
+        border-radius: 10px;
+      }
 
-    .card3 {
-      background: rgba(23, 12, 61, 0.3);
-      width: 701px;
-      height: 428px;
-      border-radius: 10px;
-      position: absolute;
-      top: 200px;
-      left: 0px;
-      backdrop-filter: blur(10px);
-    }
+      .card3 {
+        background: rgba(23, 12, 61, 0.3);
+        width: 701px;
+        height: 428px;
+        border-radius: 10px;
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        backdrop-filter: blur(10px);
+      }
 
-    .card4 {
-      background: rgba(23, 12, 61, 0.2);
-      width: 400px;
-      height: 273px;
-      border-radius: 10px;
-      position: absolute;
-      top: 370px;
-      left: 40px;
+      .card4 {
+        background: rgba(23, 12, 61, 0.2);
+        width: 400px;
+        height: 273px;
+        border-radius: 10px;
+        position: absolute;
+        top: 370px;
+        left: 40px;
 
-      backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
 
-      box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
-    }
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+      }
 
-    .card5 {
-      background: rgba(23, 12, 61, 0.2);
-      width: 414px;
-      height: 273px;
-      border-radius: 10px;
-      position: absolute;
-      top: 400px;
-      left: 340px;
-      backdrop-filter: blur(10px);
-      box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
-    }
+      .card5 {
+        background: rgba(23, 12, 61, 0.2);
+        width: 414px;
+        height: 273px;
+        border-radius: 10px;
+        position: absolute;
+        top: 400px;
+        left: 340px;
+        backdrop-filter: blur(10px);
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+      }
 
-    .box > * {
-      transform:rotateY(-20deg) rotateX(20deg);
-    }
+      .box > * {
+        transform:rotateY(-20deg) rotateX(20deg);
+        /* transform: skewX(-8deg); */
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      /* 鼠标经过 box 里面的子元素 移动位置去掉 斜切 */
+      .box:hover .card1 {
+        transform: translate3d(-30px, -30px, 0);
+      }
+
+      .box:hover .card2 {
+        transform: translate3d(0, -30px, 0);
+      }
+
+      .box:hover .card3 {
+        transform: translate3d(0, 0, 0);
+      }
+
+       .box:hover .card4 {
+        transform: translate3d(-120px, 60px, 0);
+      }
+
+       .box:hover .card5 {
+        transform: translate3d(30px, 30px, 0px);
+      }
     </style>
   </head>
   <body>
