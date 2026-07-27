@@ -23,4 +23,6 @@
 
 ### [图片轮播滚动效果](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/%E5%9B%BE%E7%89%87%E8%BD%AE%E6%92%AD%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C/%E5%9B%BE%E7%89%87%E8%BD%AE%E6%92%AD%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C.html)
 
+### [3D鼠标悬停相册](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/3D%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E7%9B%B8%E5%86%8C/3D%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E7%9B%B8%E5%86%8C.html)
+
 # ✨ 原创练习
