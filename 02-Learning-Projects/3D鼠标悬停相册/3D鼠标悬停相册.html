@@ -29,6 +29,7 @@
         cursor: pointer;
         /* 添加倒影 */
         -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
+        transition: all 0.5s ease-in-out;
       }
 
       .box .item img {
@@ -47,8 +48,13 @@
       }
 
       /* 鼠标经过某个盒子，其余的子盒子都变形 */
-      .box:hover .item {
-        transform: scale(0.9) rotateY('45deg');
+      .box:hover .item:not(:hover) {
+        transform: perspective(500px) scale(0.9) rotateY(45deg);
+      }
+
+      /* 鼠标经过的盒子，后面的兄弟（姐妹） 修改下变形 */
+      .box .item:hover ~ .item {
+        transform: perspective(500px) scale(0.9) rotateY(-45deg);
       }
     </style>
   </head>
