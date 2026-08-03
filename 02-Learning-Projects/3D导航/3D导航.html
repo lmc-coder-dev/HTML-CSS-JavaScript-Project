@@ -34,11 +34,18 @@
 
       /* 3.1 准备导航里面图标的基本样式 */
       ul li {
+        position: relative;
         width: 80px;
         height: 40px;
+        /* 开启子元素的3d空间 */
+        transform-style: preserve-3d;
+        transition: all .5s;
       }
 
       ul li span {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         line-height: 40px;
@@ -51,11 +58,17 @@
       ul li .front {
         background: #fff;
         color: #3b5999;
+        transform: translateZ(20px);
       }
 
       ul li .bottom {
         background: #3b5999;
         color: #fff;
+        transform: translateY(20px) rotateX(-90deg);
+      }
+
+      ul li:hover {
+        transform: rotateX(90deg);
       }
     </style>
   </head>
