@@ -25,4 +25,6 @@
 
 ### [3D鼠标悬停相册](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/3D%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E7%9B%B8%E5%86%8C/3D%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E7%9B%B8%E5%86%8C.html)
 
+### [3D导航](https://lmc-coder-dev.github.io/HTML-CSS-JavaScript-Project/02-Learning-Projects/3D%E5%AF%BC%E8%88%AA/3D%E5%AF%BC%E8%88%AA.html)
+
 # ✨ 原创练习
