@@ -16,6 +16,7 @@
       }
 
       .box {
+        width: fit-content;
         margin: 200px auto;
         display: flex;
         justify-content: center;
@@ -25,11 +26,11 @@
       .box .item {
         width: 120px;
         height: 120px;
-        margin: 0 2px;
+        margin: 0 5px;
         cursor: pointer;
         /* 添加倒影 */
         -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
-        transition: all 1.5s ease-in-out;
+        transition: all 0.75s ease-in-out;
       }
 
       .box .item img {
@@ -52,6 +53,7 @@
       /* 鼠标经过某个盒子，其余的子盒子都变形 */
       .box:hover .item:not(:hover) {
         transform: perspective(500px) scale(0.9) rotateY(45deg);
+        filter: blur(5px);
       }
 
       /* 鼠标经过的盒子，后面的兄弟（姐妹） 修改下变形 */
