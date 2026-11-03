@@ -59,12 +59,18 @@
       position: relative;
       opacity: 0;
       transform: translateX(-250px);
+      transition: all 0.5s  calc(0.1s * var(--i));
+      /* transition-delay: calc(0.1s * var(--i)); */
     }
 
     ul li:hover {
       background-color: #f2f2f2;
     }
 
+    .nav .toggle:hover + ul li {
+      transform: translateX(0);
+      opacity: 1;
+    }
   </style>
 </head>
 
@@ -74,11 +80,11 @@
       菜单
     </div>
     <ul>
-      <li>主页</li>
-      <li>关于</li>
-      <li>联系</li>
-      <li>介绍</li>
-      <li>售后</li>
+      <li style="--i:0">主页</li>
+      <li style="--i:1">关于</li>
+      <li style="--i:2">联系</li>
+      <li style="--i:3">介绍</li>
+      <li style="--i:4">售后</li>
     </ul>
   </div>
 </body>
